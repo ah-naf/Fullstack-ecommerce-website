@@ -3,7 +3,7 @@ import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
 export const getProduct = createAsyncThunk('product/getProduct', async (payload, thunkAPI) => {
     let url= `https://ahnaf-ecommerce-website.herokuapp.com/api/products`
     if(payload.cat) {
-        url = `https://ahnaf-ecommerce-website.herokuapp.com//api/products/?cat=${payload.cat}`
+        url = `https://ahnaf-ecommerce-website.herokuapp.com/api/products/?cat=${payload.cat}`
     }
     else if(payload.price.priceL) {
         url = `/api/products/?pricel=${payload.price.priceL}&&priceh=${payload.price.priceH}`
@@ -15,7 +15,7 @@ export const getProduct = createAsyncThunk('product/getProduct', async (payload,
 
 
 export const asyncFav = createAsyncThunk('product/asyncFav', async ({id, token}) => {
-    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com//api/products/fav/${id}`, {
+    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/products/fav/${id}`, {
         method: 'POST',
         headers: {
             token: token
@@ -25,7 +25,7 @@ export const asyncFav = createAsyncThunk('product/asyncFav', async ({id, token})
 
 
 export const asyncSingleProduct = createAsyncThunk('product/asyncSingleProduct', async (id, thunkApi) => {
-    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com//api/products/${id}`)
+    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/products/${id}`)
     const data = await res.json()
     return data;
 })

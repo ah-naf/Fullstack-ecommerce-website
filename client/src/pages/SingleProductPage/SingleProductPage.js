@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Heart, Star } from "react-iconly";
+import { Heart } from "react-iconly";
 import "./SingleProductPage.css";
 import Reviews from "../../components/Reviews/Reviews";
 import Product from "../../components/Product/Product";
@@ -14,7 +14,6 @@ import { asyncFav } from "../../store/productSlice.js";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { asyncCartAdd, asyncCartGet } from "../../store/cartSlice";
-import { asynctGetReview } from "../../store/reviewSlice";
 
 toast.configure();
 
@@ -43,7 +42,7 @@ export default function SingleProductPage() {
 
     const isFavHandler = async () => {
       const res = await fetch(
-        `/api/products/fav/${search}`,
+        `https://ahnaf-ecommerce-website.herokuapp.com//api/products/fav/${search}`,
         {
           headers: {
             token: localStorage.getItem("token"),
@@ -52,7 +51,6 @@ export default function SingleProductPage() {
       );
       const json = await res.json();
       setIsFav(json.fav);
-      console.log(json);
     };
     isFavHandler();
   }, [cat, dispatch, location, images]);

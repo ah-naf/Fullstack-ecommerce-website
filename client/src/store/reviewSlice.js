@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 toast.configure();
 
 export const asyncReviewAdd = createAsyncThunk('review/asyncReviewAdd', async (payload) => {
-    const res = await fetch(`/api/reviews/${payload.id}`, {
+    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/reviews/${payload.id}`, {
         method: 'POST',
         headers: {
             'Content-Type' : 'application/json',
@@ -29,7 +29,7 @@ export const asyncReviewAdd = createAsyncThunk('review/asyncReviewAdd', async (p
 })
 
 export const asynctGetReview = createAsyncThunk('review/asyncGetReview', async (id) => {
-    const res = await fetch(`/api/reviews/${id}`)
+    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/reviews/${id}`)
     const data = await res.json()
     if(res.ok) {
         return data;

@@ -1,12 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import {Delete} from 'react-iconly'
-import { useDispatch } from 'react-redux'
-import { deleteCartItem } from '../../store/cartSlice'
-import {asyncSingleProduct} from '../../store/productSlice'
 import './Cart.css'
 
 export default function Cart({data, handleDelete}) {
-    const dispatch = useDispatch()
     const image = data.images.split(' ~ ')[0]
     
 

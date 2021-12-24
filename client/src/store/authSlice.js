@@ -6,7 +6,7 @@ toast.configure();
 export const asyncRegistration = createAsyncThunk(
   "auth/asyncRegistration",
   async (payload) => {
-    const res = await fetch(`/api/auth/register`, {
+    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ export const asyncRegistration = createAsyncThunk(
 export const asyncLogin = createAsyncThunk(
   "auth/asyncLogin",
   async (payload) => {
-    const res = await fetch(`/api/auth/login`, {
+    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

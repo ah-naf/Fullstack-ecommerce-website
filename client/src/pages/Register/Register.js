@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@nextui-org/react";
 import "./Register.css";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
 import ArekFooter from "../../components/ArekFooter/ArekFooter";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import { useDispatch, useSelector } from "react-redux";
-import { asyncRegistration, resetAllState } from "../../store/authSlice";
+import { useDispatch } from "react-redux";
+import { asyncRegistration } from "../../store/authSlice";
 
 toast.configure();
 
 export default function Register() {
   const dispatch = useDispatch();
-  const tokenOrError = useSelector((state) => state.auth.token);
   const [regDetails, setRegDetails] = useState({
     first_name: "",
     last_name: "",
@@ -21,10 +20,6 @@ export default function Register() {
     password: "",
     phone: "",
   });
-
-  useEffect(() => {
-    console.log(tokenOrError)
-  }, [tokenOrError])
 
   const handleRegistration = async () => {
     dispatch(asyncRegistration(regDetails))

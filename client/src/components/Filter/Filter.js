@@ -6,7 +6,7 @@ import "./Filter.css";
 import { Link } from "react-router-dom";
 import {useDispatch, useSelector} from 'react-redux'
 import {changeProductPerPage} from '../../store/paginationSlice'
-import { getProduct, sortProduct } from "../../store/productSlice";
+import { sortProduct } from "../../store/productSlice";
 
 export default function Filter() {
     const dispatch = useDispatch()

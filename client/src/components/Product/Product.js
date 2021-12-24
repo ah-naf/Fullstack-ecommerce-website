@@ -22,7 +22,7 @@ export default function Product({ data }) {
 
   useEffect(() => {
     const isFavHandler = async () => {
-      const res = await fetch(`/api/products/fav/${data.id}`, {
+      const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/products/fav/${data.id}`, {
         headers: {
           token: localStorage.getItem('token')
         }

@@ -24,7 +24,6 @@ export default function AllProduct() {
       cat: search.get("cat"),
       price: { priceL: search.get("pricel"), priceH: search.get("priceh") },
     };
-    console.log(queryParams);
     dispatch(getProduct(queryParams));
   }, [dispatch, location]);
 

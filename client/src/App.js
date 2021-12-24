@@ -13,7 +13,7 @@ import Register from "./pages/Register/Register";
 import SingleProductPage from "./pages/SingleProductPage/SingleProductPage";
 import Wishlist from "./pages/Wishlist/Wishlist";
 import { resetAllState, setAuth } from "./store/authSlice";
-import { asyncCartGet, resetCart } from "./store/cartSlice";
+import { asyncCartGet } from "./store/cartSlice";
 
 
 function App() {
@@ -31,7 +31,6 @@ function App() {
       if(!res.ok) {
         localStorage.removeItem('token')
         localStorage.removeItem('username')
-        // console.log('ih')
         dispatch(resetAllState())
         
       } else {

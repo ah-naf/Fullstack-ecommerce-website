@@ -6,7 +6,6 @@ import { useDispatch } from "react-redux";
 import { asyncCartEdit, asyncCartGet } from "../../store/cartSlice";
 
 export default function CartPageSingle({ data, handleDelete }) {
-  console.log(data)
   const dispatch = useDispatch()
   const image = data.images.split(" ~ ")[0];
   const [prodQuantity, setProdQuantity] = useState(data.quantity);

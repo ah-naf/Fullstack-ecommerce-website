@@ -35,7 +35,7 @@ export default function CartPage() {
 
   React.useEffect(() => {
     const makeRequest = async () => {
-      const res = await fetch('http://localhost:5000/api/checkout/payment', {
+      const res = await fetch('https://ahnaf-ecommerce-website.herokuapp.com/api/checkout/payment', {
         method: 'POST',
         headers: {
           'Content-Type' : 'application/json'

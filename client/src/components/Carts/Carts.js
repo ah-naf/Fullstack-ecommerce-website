@@ -1,7 +1,7 @@
 import React from "react";
 import Cart from "../Cart/Cart";
 import { Button } from "@nextui-org/react";
-import { Wallet, Show, CloseSquare } from "react-iconly";
+import { Show, CloseSquare } from "react-iconly";
 import "./Carts.css";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";

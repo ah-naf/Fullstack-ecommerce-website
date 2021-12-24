@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Button, Card, Col, Text, Row } from "@nextui-org/react";
 import "./Product.css";
 import { Link } from "react-router-dom";
-import { asyncFav } from "../../store/productSlice.js";
+import { asyncFav, asyncFavGet } from "../../store/productSlice.js";
 import { resetAllState } from "../../store/authSlice";
 import { asyncCartAdd, asyncCartGet } from "../../store/cartSlice";
 
@@ -79,6 +79,7 @@ export default function Product({ data }) {
     }
     setIsFav(!isFav)
     dispatch(asyncFav({ id: data.id, token: localStorage.getItem("token") }));
+    dispatch(asyncFavGet(localStorage.getItem('token')))
   };
   return (
     <Link to={`/product/${data.id}`} className="lol">

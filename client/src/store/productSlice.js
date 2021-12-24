@@ -23,6 +23,15 @@ export const asyncFav = createAsyncThunk('product/asyncFav', async ({id, token})
     })
 })
 
+export const asyncFavGet = createAsyncThunk('product/asyncFavGet', async (token) => {
+    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/products/fav`, {
+        headers: {
+            token : token
+        }
+    })
+    const data = await res.json()
+    return data;
+})
 
 export const asyncSingleProduct = createAsyncThunk('product/asyncSingleProduct', async (id, thunkApi) => {
     const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/products/${id}`)
@@ -36,7 +45,8 @@ const productSlice = createSlice({
         allProduct: [],
         product: [],
         singleProduct: {},
-        loading: false
+        loading: false,
+        allFavProduct: []
     },
     reducers: {
         sortProduct: (state, {payload}) => {
@@ -83,6 +93,13 @@ const productSlice = createSlice({
         },
         [asyncSingleProduct.fulfilled]: (state, {payload}) => {
             state.singleProduct = payload;
+            state.loading = false
+        },
+        [asyncFavGet.pending]: (state, action) => {
+            state.loading = true
+        },
+        [asyncFavGet.fulfilled]: (state, {payload}) => {
+            state.allFavProduct = payload;
             state.loading = false
         }
     }

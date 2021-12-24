@@ -25,6 +25,7 @@ router.get('/:id', async (req,res) => {
         console.log('review ekta pore')
         res.status(200).json(review.rows)
     } catch (error) {
+        console.log(error)
         res.status(500).json({message : error})
     }
 })

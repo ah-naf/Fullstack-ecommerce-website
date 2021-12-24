@@ -42,7 +42,7 @@ export default function SingleProductPage() {
 
     const isFavHandler = async () => {
       const res = await fetch(
-        `https://ahnaf-ecommerce-website.herokuapp.com//api/products/fav/${search}`,
+        `https://ahnaf-ecommerce-website.herokuapp.com/api/products/fav/${search}`,
         {
           headers: {
             token: localStorage.getItem("token"),

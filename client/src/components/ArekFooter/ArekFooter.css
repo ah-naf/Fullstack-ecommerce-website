@@ -1,0 +1,32 @@
+.arekfooter-container {
+    padding: 50px 20px 30px;
+}
+
+.arekta-footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.footer-col {
+    flex-basis: 23%;
+}
+
+.footer-col h6 {
+    font-size: 18px;
+}
+
+.footer-col a,
+.footer-col p,
+.footer-col span {
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footer-col:last-of-type p {
+    font-weight: 400;
+}

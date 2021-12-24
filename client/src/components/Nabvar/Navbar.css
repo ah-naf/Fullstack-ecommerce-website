@@ -1,0 +1,198 @@
+    .navbar-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        transition: all .3s;
+        /* overflow: hidden; */
+    }
+    
+    .navbar-container ul {
+        z-index: 500;
+    }
+    
+    .logo-container img {
+        width: 100px;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        padding-bottom: 5px;
+        transition: all .3s;
+    }
+    
+    .nav-item::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        top: 100%;
+        left: 0;
+        height: 1px;
+        background-color: black;
+        transition: all .3s;
+    }
+    
+    .nav-item:hover.nav-item::after {
+        width: 100%;
+    }
+    
+    .nav-item a {
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+    
+    .nav-item:not(.nav-item:last-of-type) {
+        margin-right: 20px;
+    }
+    
+    .icon-container,
+    .cart-icon {
+        position: relative;
+    }
+    
+    .nav-icon {
+        margin-left: 30px;
+        cursor: pointer;
+        color: black;
+    }
+    
+    .cart-item {
+        position: absolute;
+        top: -2px;
+        right: -18px;
+        font-size: 13px;
+        padding: 0px 5px;
+        border-radius: 50%;
+        background-color: royalblue;
+        color: white;
+        font-weight: 600;
+    }
+    
+    .sticky {
+        background-color: white;
+        position: sticky !important;
+        top: 0;
+        box-shadow: 0 0 8px rgb(0, 0, 0, 0.2) !important;
+    }
+    
+    .sticky .logo-container {
+        display: none;
+    }
+    
+    .sticky .nav-item a,
+    .sticky .icon {
+        color: black;
+    }
+    
+    .hamburger,
+    .close,
+    .logo {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .menu-show {
+        transform: scale(0);
+    }
+    
+    .menu-show~ul,
+    .filter-show {
+        transform: translateX(0) !important;
+    }
+    
+    .profile-popup-container {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        padding: 15px 10px 10px 40px;
+        min-width: 250px;
+        border-radius: 5px;
+        transform: translateX(-8%);
+        z-index: -500;
+        box-shadow: 0 0 10px rgb(0 0 0 / 8%);
+        opacity: 0;
+        transform: translateY(10%);
+        transition: all .3s;
+        pointer-events: none;
+    }
+    
+    .profile-popup-show {
+        opacity: 1;
+        transform: translateY(0);
+        z-index: 500;
+        pointer-events: unset;
+    }
+    
+    .profile-popup-container a {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        font-size: 15px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .profile-popup-container .icon {
+        margin-right: 10px;
+        position: relative;
+        top: -1px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .navbar-container {
+            position: relative;
+            background-color: white;
+        }
+        .nav-item a,
+        .icon {
+            color: black;
+        }
+        .logo-container {
+            display: none;
+        }
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            transition: all .3s;
+        }
+        ul {
+            position: absolute;
+            top: 0%;
+            left: 0;
+            background-color: white;
+            height: 100vh;
+            padding: 50px 30px 0 !important;
+            transform: translateX(-100vw);
+            transition: all .3s;
+        }
+        .nav-item,
+        .close,
+        .logo {
+            display: block;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .logo img {
+            width: 100%;
+            width: 90px;
+            margin-bottom: 20px;
+        }
+        .sticky .icon-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }

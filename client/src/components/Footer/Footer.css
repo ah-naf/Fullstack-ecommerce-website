@@ -1,0 +1,35 @@
+.footer-container {
+    background-color: #222;
+    padding: 15px 30px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo span {
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-col-right img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-logo {
+        display: flex !important;
+        margin-bottom: 10px;
+    }
+    .footer-row {
+        flex-direction: column;
+    }
+}

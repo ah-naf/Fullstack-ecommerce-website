@@ -1,0 +1,38 @@
+.register-form-container {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 700px;
+    margin: 40px auto 10px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: flex-start;
+}
+
+.register-form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid rgba(100, 100, 100, 0.1);
+}
+
+.register-form input:focus {
+    border: 2px solid royalblue;
+}
+
+.register-form label {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(97, 96, 96);
+}
+
+.register-form a {
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}

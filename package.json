@@ -1,0 +1,30 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "heroku-postbuild": "cd client && npm install && npm run build"
+    },
+    "engines": {
+        "node": "14.18.1",
+        "npm": "8.1.1"
+    },
+    "keywords": [],
+    "author": "Ahnaf",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "cloudinary": "^1.27.1",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "multer": "^1.4.4",
+        "multer-storage-cloudinary": "^4.0.0",
+        "nodemon": "^2.0.15",
+        "pg": "^8.7.1",
+        "stripe": "^8.195.0"
+    }
+}

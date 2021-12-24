@@ -1,0 +1,32 @@
+.write-a-review-container {
+    display: flex;
+    justify-content: center;
+}
+
+.review-form {
+    width: 100%;
+}
+
+.review-form input,
+.review-form textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 5px;
+    background-color: transparent;
+    border: 3px solid rgba(65, 105, 225, 0.2);
+    transition: all .2s ease;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+    border-color: rgba(65, 105, 225, 1);
+}
+
+.review-form label {
+    margin: 5px 0;
+    font-weight: 500;
+    opacity: 0.8;
+}

@@ -1,0 +1,59 @@
+.login-container {
+    padding: 100px 20px 50px;
+}
+
+.login-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.login-col {
+    flex-basis: 45%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 30px 40px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-col h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.login-col p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 5px !important;
+}
+
+.login-col .container {
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+.login-form .with-label {
+    width: 100% !important;
+}
+
+.login-form-container button {
+    margin-top: 10px !important;
+}
+
+@media screen and (max-width: 800px) {
+    .login-col {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        padding-top: 50px;
+    }
+    .container {
+        max-width: unset !important;
+    }
+}

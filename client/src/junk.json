@@ -1,0 +1,89 @@
+[{
+        "title": "Relaxed-Fit Cotton Shirt-1",
+        "price": "12.00",
+        "stock": 300,
+        "color": ["red", "green"],
+        "size": ["M", "L", "XXL"],
+        "rating": 4,
+        "desc": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "images": ["https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-02.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-04.jpg"],
+        "categories": ["men", "shirt"]
+    },
+    {
+        "title": "Relaxed-Fit Cotton Shirt-2",
+        "price": "12.00",
+        "stock": 300,
+        "color": ["red", "green"],
+        "size": ["M", "L", "XXL"],
+        "rating": 4,
+        "desc": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "images": ["https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-02.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-04.jpg"],
+        "categories": ["men", "shirt"]
+    },
+    {
+        "title": "Relaxed-Fit Cotton Shirt-3",
+        "price": "12.00",
+        "stock": 300,
+        "color": ["red", "green"],
+        "size": ["M", "L", "XXL"],
+        "rating": 4,
+        "desc": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "images": ["https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-02.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-04.jpg"],
+        "categories": ["men", "shirt"]
+    },
+    {
+        "title": "Relaxed-Fit Cotton Shirt-4",
+        "price": "12.00",
+        "stock": 300,
+        "color": ["red", "green"],
+        "size": ["M", "L", "XXL"],
+        "rating": 4,
+        "desc": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "images": ["https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-02.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-04.jpg"],
+        "categories": ["men", "shirt"]
+    },
+    {
+        "title": "Relaxed-Fit Cotton Shirt-5",
+        "price": "12.00",
+        "stock": 300,
+        "color": ["red", "green"],
+        "size": ["M", "L", "XXL"],
+        "rating": 4,
+        "desc": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "images": ["https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-02.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-04.jpg"],
+        "categories": ["men", "shirt"]
+    },
+    {
+        "title": "Relaxed-Fit Cotton Shirt-6",
+        "price": "12.00",
+        "stock": 300,
+        "color": ["red", "green"],
+        "size": ["M", "L", "XXL"],
+        "rating": 4,
+        "desc": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "images": ["https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-02.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-04.jpg"],
+        "categories": ["men", "shirt"]
+    },
+    {
+        "title": "Relaxed-Fit Cotton Shirt-7",
+        "price": "12.00",
+        "stock": 300,
+        "color": ["red", "green"],
+        "size": ["M", "L", "XXL"],
+        "rating": 4,
+        "desc": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "images": ["https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-02.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-04.jpg"],
+        "categories": ["men", "shirt"]
+    },
+    {
+        "title": "Relaxed-Fit Cotton Shirt-8",
+        "price": "12.00",
+        "stock": 300,
+        "color": ["red", "green"],
+        "size": ["M", "L", "XXL"],
+        "rating": 4,
+        "desc": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        "images": ["https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-02.jpg", "https://wokiee.reactdemo.hasthemes.com/assets/images/product/product-01-04.jpg"],
+        "categories": ["men", "shirt"]
+    }
+]

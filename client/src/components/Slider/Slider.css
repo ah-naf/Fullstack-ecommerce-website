@@ -1,0 +1,61 @@
+.carousel-inner {
+    height: 100% !important;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: 50%;
+}
+
+.carousel-caption {
+    top: 50% !important;
+    position: absolute;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    bottom: unset !important;
+    width: 100%;
+}
+
+.carousel-caption h1 {
+    font-size: 80px;
+    line-height: 1.1;
+    max-width: 600px;
+    margin: auto;
+}
+
+.carousel-caption h1 span {
+    font-size: 50px;
+    color: royalblue;
+}
+
+@media screen and (max-width: 1000px) {
+    .carousel-caption h1 {
+        font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 40px;
+    }
+    .carousel-caption p {
+        font-size: 15px;
+        margin-top: 10px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carousel-caption h1 {
+        font-size: 35px;
+    }
+    .carousel-caption h1 span {
+        font-size: 40px;
+    }
+    .shop-now-btn {
+        font-size: 15px !important;
+    }
+}

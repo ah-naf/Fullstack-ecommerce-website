@@ -1,0 +1,21 @@
+.newsletter-container {
+    background-color: var(--bs-blue);
+    padding: 15px 0;
+}
+
+.newsletter-input {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .newsletter-container {
+        display: none;
+    }
+}

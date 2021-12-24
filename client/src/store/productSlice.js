@@ -24,7 +24,7 @@ export const asyncFav = createAsyncThunk('product/asyncFav', async ({id, token})
 })
 
 export const asyncFavGet = createAsyncThunk('product/asyncFavGet', async (token) => {
-    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/products/fav`, {
+    const res = await fetch(`https://ahnaf-ecommerce-website.herokuapp.com/api/products/allfav`, {
         headers: {
             token : token
         }

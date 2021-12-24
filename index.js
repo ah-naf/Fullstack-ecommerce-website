@@ -25,10 +25,6 @@ app.use('/api/cart', require('./routes/cart'))
 app.use('/api/reviews', require('./routes/reviews'))
 app.use('/api/checkout', require('./routes/stripe'))
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build/index.html"));
-});
-
 app.listen(PORT, () => {
   console.log("Server is running");
 });

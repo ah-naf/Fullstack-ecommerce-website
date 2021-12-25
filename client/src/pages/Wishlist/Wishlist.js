@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import data from "../../junk.json";
 import Product from "../../components/Product/Product";
 import "./Wishlist.css";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";

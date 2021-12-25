@@ -79,7 +79,6 @@ export default function Product({ data }) {
     }
     setIsFav(!isFav)
     dispatch(asyncFav({ id: data.id, token: localStorage.getItem("token") }));
-    dispatch(asyncFavGet(localStorage.getItem('token')))
   };
   return (
     <Link to={`/product/${data.id}`} className="lol">

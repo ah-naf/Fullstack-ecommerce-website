@@ -101,6 +101,15 @@ const productSlice = createSlice({
         [asyncFavGet.fulfilled]: (state, {payload}) => {
             state.allFavProduct = payload;
             state.loading = false
+        },
+        [getProduct.rejected]: (state, payload) => {
+            state.loading = false
+        },
+        [asyncSingleProduct.rejected]: (state, payload) => {
+            state.loading = false
+        },
+        [asyncFavGet.rejected]: (state, payload) => {
+            state.loading = false
         }
     }
 })
